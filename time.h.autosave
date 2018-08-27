@@ -1,0 +1,14 @@
+#ifndef TIME_H
+#define TIME_H
+#include "object.h"
+
+class time : public object
+{
+    unsigned int sec;
+public:
+    time();
+    unsigned int get_min;
+    unsigned int get_hour;
+};
+
+#endif // TIME_H

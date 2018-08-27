@@ -1,0 +1,23 @@
+#ifndef AREA_H
+#define AREA_H
+#include "lenght.h"
+
+class area : public lenght
+{
+protected:
+    unsigned int width;
+public:
+    //distruttore e costruttore copia
+    area();
+    area(unsigned int);// supponiamo sia un quadrato, quindi width=lenght=rad(area)
+    area(unsigned int, unsigned int);// costruttore con i 2 lati
+    unsigned int get_ettaro();
+    unsigned int get_mm2();
+    unsigned int get_d2(); //superfluo?
+    unsigned int get_m2();
+    unsigned int get_km2();
+
+    
+};
+
+#endif // AREA_H

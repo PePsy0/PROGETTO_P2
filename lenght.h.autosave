@@ -1,0 +1,27 @@
+#ifndef LENGHT_H
+#define LENGHT_H
+#include "object.h"
+
+
+class lenght : public object
+{
+protected:
+    unsigned int L;
+public:
+    virtual ~lenght ();//distruttore
+    lenght (const lenght&);//costruttore di copia
+
+    lenght();
+    lenght(unsigned int);
+    unsigned int get_m() const;
+    unsigned int get_cm() const;//dio cane i const
+    unsigned int get_dm() const;
+    unsigned int get_km() const;
+    
+   //overloading operatori virtuali
+
+};
+
+//overloading operatori di output
+
+#endif // LENGHT_H
